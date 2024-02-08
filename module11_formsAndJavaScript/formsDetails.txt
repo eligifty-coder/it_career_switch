@@ -1,0 +1,35 @@
+FORMS
+Forms allow users to input information for retrieval from the website. 
+
+INPUT CONTROLS
+Input controls provide the means to enter text on the webpage
+
+<input type="text" id="name", name="name">
+
+Here are some common inputs controls:
+button >> This provides a button on a webpage
+File >>> THis allows a usr to input a file for upload
+Radio >>>> These make a list that allow for ne option from it to be made.
+Submit >>>> This processes the webpage form
+text >>>> This gives a single line for text input
+The TEXTAREA control provides a large box on a web page for the input of multiple lines of text
+
+<textarea id="textarea" name="textarea" rows="10" cols="50" ></textarea>
+
+The SELECT control provides a drop-down list that provide users a choice
+
+<select name="course">
+<option>Adult</option>
+<option>Teen</option>
+<option>CHild</option>
+</select>
+
+The LABEL elements are paired with input controls using their id values using the "for" attribute to provide label for them
+
+<label for="course">Course</label>
+
+The "action" attribute is used by  form elements to perform an operation specified by it.
+
+COMMON GATEWAY INTERFACE (CGI) scripts can interact with web pages to provide information using languages such as PHP.
+
+<form method="GET" action="getForm.php" >

@@ -1,0 +1,202 @@
+body{
+   background-image: linear-gradient(white, #000);
+
+}
+header img{
+   width:100%; /* This stretches the logo across the viewport  */
+   height: auto;
+   max-width: 500px;
+}
+header nav{
+   border-radius: 1em;
+   
+   font-weight: bold;
+   text-align: center;
+}
+
+header nav ul{
+   list-style-type: none;
+}
+
+nav ul{
+   padding: 0;
+   margin-top: 0.2em;
+   margin-bottom: 0.2em;
+}
+
+nav ul li{
+   background-color: #000;
+   min-width: 12%;
+   margin: .25em;
+   padding: 1em;
+   
+}
+nav ul li a{
+   color: #fff;
+   text-decoration: none;
+}
+figure{
+   text-align: center;
+   background-color: #fff;
+}
+figure img{
+   max-width: 40%;
+   max-height: auto;
+   width: 100%;
+   -o-object-fit: cover;
+      object-fit: cover;
+      height: auto;
+}
+
+main{
+   margin-top: 1em;
+   border-radius: 1.0em;
+   background-image: linear-gradient(#fff, #fff, gray);
+   padding: 10px;
+   height: 400px;
+}
+
+
+main div.row .left {
+   padding: 1em;
+   
+}
+main div.row .center {
+   padding: 1em;
+}
+main div.row .right {
+   padding: 1em;
+}
+footer{
+   margin-top: 1em;
+   border-top: solid 0.3em #000;
+   border-bottom: solid 0.3em #000;
+   border-radius: 1em;
+   background-image: linear-gradient(to right, white, gray);
+   border: 1em;
+   text-align: center;
+   padding: 1em 0;
+}
+
+
+/* Begin mobile */
+@media screen and (max-width:640px){
+   nav ul li{
+      border-radius: 4em;
+      
+   }
+   .tablet {
+      display: none;
+   }
+   main div.row .desktop{
+      display: none;
+   }
+   
+}
+/* End mobile */
+
+
+/* Begin  tablet*/
+@media screen and (min-width:641px)  {
+   nav ul li {
+      display: inline-block;
+      border-radius: 1em;
+      box-shadow: 0.4em 0.5em 0.5em #000;
+      border-top: solid .2em #000;
+      border-bottom: solid .2em #000;
+      min-width: 12%;
+   }
+   figure{
+      box-shadow: 0.5em 0.5em 0.5em #000;
+   }
+   /* This was for our 3-column layout begin */
+   main{
+      box-shadow: 0.5em 0.5em 0.5em #000;
+   }
+   main div.row .left {
+      display: none;
+   }
+   main div.row {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+   }
+   main div.row .center {
+      /* width: 66%; */
+      border-right: 0.5em solid #000;
+   }
+   /* 3-column layout end */
+   
+   /* schedule table begin */
+   .schedule table{
+      border: 0.1em solid #000;
+      border-collapse: collapse;
+      width: 95%;
+      margin-left: 2.5%;
+      background-color: white;
+   }
+   .schedule caption{
+      border: 0.1em solid #000;
+      font-size: 1.5em;
+      font-weight: bold;
+   }
+   .schedule th{
+      background-color: #000;
+      color: #fff;
+   }
+   .schedule th, td{
+      border: 0.1em solid #000;
+      padding: 0.5em;
+      text-align: center;
+   }
+   /* schedule table end */
+   footer{
+      box-shadow:0.5em 0.5em 0.5em #000 ;
+   }
+}
+/* End  tablet*/
+
+/* Begin  Desktop*/
+@media screen and (min-width:961px) {
+   header{
+      background-image: linear-gradient(to right, white, #000, #000, #000);
+      border: 1em;
+   }
+   header{
+      display:grid;
+      grid-template-columns: auto 1fr ;
+      align-items: center;
+      box-shadow: 0.5em 0.5em 0.5em #000;
+   }
+   header img{
+      max-width: auto;
+      height: 4.1em;
+   }
+   header nav{
+      width: auto;
+      justify-self: flex-end;
+   }
+   header nav {
+      background-color: #000;
+      border-top: solid 0.2em #000;
+      border-bottom: solid 0.2em #000;
+      padding: 0.5em;
+   }
+   header nav ul {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      align-items: center;
+   }
+   main div.row {
+      display: grid;
+      grid-template-columns: auto auto auto;
+   }
+   main div.row .center {
+      border-left: 0.5em solid #000;
+      border-right: 0.5em solid #000;
+   }
+   main div.row .desktop {
+      display: block;
+   }
+/* End  Desktop*/
+   }

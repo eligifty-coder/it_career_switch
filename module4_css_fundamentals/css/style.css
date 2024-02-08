@@ -1,0 +1,42 @@
+h2{
+   color: #fff;
+   background-color: #ff0000;
+   font-family: Arial, "Comic Sans", Calibri;
+   font-size: 2em;
+   text-align: center;
+}
+h1{
+   color: #fff;
+   background-color: #fff;
+}
+
+#container{
+   color: yellow;
+}
+.accent{
+   background-color: yellow;
+   color: gray;
+}
+body main div{
+   color: #fff;
+}
+footer{
+   background-color: rgb(23,216, 126);
+   color: #6920dd;
+}
+
+/* em :Relative to element default font size that is 1.5em */
+/* % : Relative to element default font size that is 75%*/
+/* px (pixel count): Relative to element default font size that is 20px*/
+/* pt (point): Relative to element default font size that is 14pt*/
+
+/* CSS TEXT Properties */
+/* 
+font-family
+font-size
+font-weight
+font-style
+text-align
+color
+ */
+/* https://jigsaw.w3.org/css-validator */

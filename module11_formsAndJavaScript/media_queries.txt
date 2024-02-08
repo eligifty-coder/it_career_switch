@@ -1,0 +1,10 @@
+Screen media typically include smart phones, tablets and computer monitors
+<link rel="stylesheet" href="css/style.css" media="screen" >
+
+Print media is used for printing a webpage
+<link rel="stylesheet" href="css/styleprint.css" media="print" >
+
+Speech media is used for reading the page out loud using screen readers
+<link rel="stylesheet" href="css/stylespeech.css" media="speech" >
+
+Media queries can also be specified using the css files themselves instead. As pages become more complex, this method becomes preferred

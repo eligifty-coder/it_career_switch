@@ -1,0 +1,56 @@
+PIXELS are the smallest portions of color or light on an image display.
+=====================================
+
+OPTIMIZATION involves reducing image file size using various means. This includes:
+Image cropping
+modifying dimensions
+Quality adjustment
+Changing image file format
+====================================
+Image format
+Joint Photographic Experts Group (.jpg)
+
+Portable Network Graphics (.png)
+
+Grapic Interchange Format (.gif)
+
+Scalable Vector Graphics (.svg)
+
+
+=============================================
+GIMP is an image manipulation program
+
+
+===================================================
+Raster (Pixel) graphics map image data into grid of rectangles
+
+Vector Graphics creates images using geometric 
+
+Raster Graphics
+.jpg
+.png
+.gif
+
+Vector Graphics
+.svg
+
+================================================
+.jpg image has no transparency
+.jpg image has lossy compression (ideal for still images)
+
+.png image 
+- Has Lossless compression (Less Ideal for still images)
+- transparency
+
+.gif
+- has lossless compression
+- Still images or animated frames
+- 256 colors
+- transparency
+
+SVG
+- Maintain quality when resized
+- can be created purely with code
+
+
+

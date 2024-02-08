@@ -1,0 +1,43 @@
+<!-- inline style overwrite other style sheets (embedded and external style sheets) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Home page</title>
+   <meta charset="utf-8">
+
+   <!-- external style sheet link -->
+   <link rel="stylesheet" href="./css/style.css">
+
+   <!-- embedded styling -->
+   <style>
+      body{
+         background-color: black;
+      }
+      h2{
+         background-color: #000;
+      }
+   </style>
+</head>
+<body>
+   <header></header>
+   <nav>
+      <a href="index.html">Home</a>
+   </nav>
+   <main>
+      <!-- the inline style overrides the embedded style sheet -->
+      <h1 style="color:green;background-color: purple;">Module 4</h1>
+      <h2>This is an example of the external style sheet</h2>
+      <p id="container">This is an example of a paragraph element with an ID of container.</p>
+      <h3 class="accent">
+         This the accented heading
+      </h3>
+      <p class="accent" >
+         This is the accented paragraph
+      </p>
+      <div id="divElement">This is the <span class="accent">descendant</span> div element</div>
+   </main>
+   <footer>
+      This is a text.
+   </footer>
+</body>
+</html>

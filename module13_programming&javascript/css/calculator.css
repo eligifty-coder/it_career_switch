@@ -1,0 +1,29 @@
+main{
+   height: 100%;
+}
+main .calc{
+   border: 0.1em solid #000;
+   border-collapse: collapse;
+   width: 95%;
+   margin-left: 2.5%;
+   background-color: #000;
+}
+main .calc caption{
+   border: 0.1em solid #000;
+   font-size: 1.5em;
+   font-weight: bold;
+   background-color: #000;
+}
+main .calc caption input{
+   text-align: right;
+}
+main .calc th,
+main .calc td{
+   padding: 0.5em;
+}
+main  input{
+   width: 95%;
+   height: 3em;
+   font-size: 2em;
+   
+}

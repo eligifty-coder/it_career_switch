@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Enroll page</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/calculator.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <script src="scripts/calculator.js" type="text/javascript"></script>
+</head>
+<body>
+   <header>
+      <img src="./media/images/logo.png" alt="Logo">
+      <nav>
+         <ul>
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="./about.html">About</a>
+            </li>
+            <li>
+               <a href="./classes.html">Classes</a>
+            </li>
+            <li>
+               <a href="enroll.html">Enroll</a>
+            </li>
+            <li>
+               <a href="contact.html">Contact</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <table class="calc">
+         <caption>
+            <input type="text" id="result" value="0" readonly>
+         </caption>
+         <tr>
+            <td>
+               <input type="button" id="allclear" onclick="allClear()" value="ac" >
+            </td>
+            <td>
+               <input type="button" id="square" onclick="square(event)" value="x&sup2;" >
+            </td>
+            <td>
+               <input type="button" id="percent" onclick="percent(event)" value="%" >
+            </td>
+            <td>
+               <input type="button" id="divide" onclick="operators(4)" value="&divide;" >
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <input type="button" id="seven" onclick="input(event)" value="7" >
+            </td>
+            <td>
+               <input type="button" id="eight" onclick="input(event)" value="8" >
+            </td>
+            <td>
+               <input type="button" id="nine" onclick="input(event)" value="9" >
+            </td>
+            <td>
+               <input type="button" id="multiply" onclick="operators(3)" value="&times;" >
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <input type="button" id="four" onclick="input(event)" value="4" >
+            </td>
+            <td>
+               <input type="button" id="five" onclick="input(event)" value="5" >
+            </td>
+            <td>
+               <input type="button" id="six" onclick="input(event)" value="6" >
+            </td>
+            <td>
+               <input type="button" id="subtract" onclick="operators(2)" value="&minus;" >
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <input type="button" id="one" onclick="input(event)" value="1" >
+            </td>
+            <td>
+               <input type="button" id="2" onclick="input(event)" value="2" >
+            </td>
+            <td>
+               <input type="button" id="three" onclick="input(event)" value="3" >
+            </td>
+            <td>
+               <input type="button" id="add" onclick="operators(1)" value="&plus;" >
+            </td>
+         </tr>
+         
+         <tr>
+            <td>
+               <input type="button" id="plusminus" onclick="plusMinus()" value="&plusmn;" >
+            </td>
+            <td><input type="button" id="zero" onclick="input(event)" value="0" ></td>
+            <td> <input type="button" id="decimal" onclick="operators(6)" value="&period;" > </td>
+            <td> <input type="button"id="equals"  value="=" onclick="equals(event)"> </td>
+         </tr>
+         
+      </table>
+   </main>
+   <footer>
+      <p>Martial Art Dojo <br> <a href="mailto:owner@anybusiness.abc">owner@anybusiness.abc</a> </p>
+   </footer>
+</body>
+</html>

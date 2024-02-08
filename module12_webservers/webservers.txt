@@ -1,0 +1,6 @@
+There are many applications that provides web service
+IIS >>> This is microsoft's web server that comes with Windows
+
+Apache >>> THis is one of the web server programs that receives the heaviest use.
+
+Nginx (pronounced "engine x") >>> This is becoming very popular since it is faster than Apache and natively supports extra features

@@ -1,0 +1,3 @@
+FIXED LAYOUTS retain their look despite the viewport size
+FLUID LAYOUTS grow and shrink content based on the size of the viewport
+FLEXIBLE IMAGE use CSS rules in fluid layout to resize
