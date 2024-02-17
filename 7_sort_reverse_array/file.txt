@@ -1,0 +1,9 @@
+SORTING ARRAY
+python                       javascript
+Alphabetically (python)    Alphabetically (javascript)
+array.sort()               array.sort() 
+
+SORT A LIST/ARRAY WITHOUT CHANGING THE ORIGINAL ARRAY/LIST
+PYTHON                    JAVASCRIPT
+sorted(arr)               arr.sorted()
+
