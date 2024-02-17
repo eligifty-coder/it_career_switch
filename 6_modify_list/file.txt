@@ -1,0 +1,16 @@
+Insert data in the middle of an array
+python                           javascript
+arr.insert(index, value)        arr.splice(index, 0, ,value)
+arr.insert(index, value) >>> index: position to put the new value
+value::: is the  new data to be added
+
+arr.splice(index, 0, ,value) >>> index: position to put the new value, 
+0:: means do not remove any data
+value :: new value to be added in the index position
+
+ TO REMOVE ITEM FROM ARRAY
+ python                javascript
+ del arr[index]        array.splice(index, number of data to remove)
+
+ if in val "in" array   if arr.includes(val) or arr.indexOf(data) >0
+ len(arr)              array.length

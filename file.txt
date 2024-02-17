@@ -1,0 +1,31 @@
+1. integer
+2. float
+3. string
+4. boolean
+
+Python vs            Javascript
+str.upper()          str.toUpperCase()
+str.lower()          str.toLowerCase()
+str.title()          ------
+
+can't concatenate      can concatenate string and intege
+string and integer 
+
+str(num):: convert     num.toString()  
+interger to a string
+
+str.strip()remove white  str.trim() remove white space 4rm all sides
+space from both end
+
+str.lstrip() remove white     -------
+space from the left
+
+str.rstrip() remove white      -------
+space from the right
+
+int(data) convert int to float          parseInt(data)
+
+float(data) convt float to int             parseFloat(data)
+
+str(data)                         num.toString()    
+               

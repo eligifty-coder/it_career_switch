@@ -1,0 +1,1 @@
+Each items in a list corresponds to an index number, which is an integer value, starting with the index number 0
