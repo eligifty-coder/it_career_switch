@@ -7,3 +7,8 @@ SORT A LIST/ARRAY WITHOUT CHANGING THE ORIGINAL ARRAY/LIST
 PYTHON                    JAVASCRIPT
 sorted(arr)               arr.sorted()
 
+
+MISCELLENOUS
+PYTHON                      JAVASCRIPT
+for..in (loops over list)  for..in (loops over object)
+----------------           for ..of (loops over array)

@@ -1,0 +1,3 @@
+SLICING LISTS/ARRAYS
+PYTHON                            JAVASCRIPT
+arr[startIndex: until lastIndex]  arr.slice(startIndex:, lastIndex )
