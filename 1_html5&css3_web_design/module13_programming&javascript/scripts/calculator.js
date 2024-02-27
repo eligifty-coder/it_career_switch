@@ -5,7 +5,6 @@ let displayedVal = 0
 let clearResultFromEqualFUnc = ""
 let decimalVal =''
 function input(e) {
-
    let result = document.getElementById("result")
    let periodValArr = result.value.split(" ")
    let theIndexOfPeriod = periodValArr.indexOf(".");
@@ -22,7 +21,8 @@ function input(e) {
 		result.value += Number(e.target.value);
 	}
    if (checkSign.length >0) {
-      let val =parseInt(e.target.value) + 0
+      let val = parseInt(e.target.value) + 0
+      alert('0')
       // result.value = val;
       checkSign = ''
    }
