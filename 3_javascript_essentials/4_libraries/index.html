@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <script src="./jquery-3.7.1.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="./index.js"></script>
+</head>
+<body>
+   <header>
+      <nav>
+         <div class="container" id="navLinks">
+            <ul>
+               <li>
+                  <a href="index.html">Home</a>
+               </li>
+               <li>
+                  <a href="about.html">About</a>
+               </li>
+               <li>
+                  <a href="BookHotel.html">Book Hotel</a>
+               </li>
+               <li>
+                  <a href="BookFlight.html">Book Flight</a>
+               </li>
+               <li>
+                  <a href="BookPackage.html">Book Package</a>
+               </li>
+               <li>
+                  <a href="TravelInsurance.html">Travel Insurance</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <div class="container" id="mainDiv">
+         <h1 id="01">Hey there</h1>
+         <h1 id="mainTitle">Why Travel with Us</h1>
+         <article>
+            <section>
+               <h2 id="firstH2">Favorite Authors</h2>
+               <ul id="authors">
+                  <li>John Grisham</li>
+                  <li>Tom Clancy</li>
+                  <li>David Bakdacci</li>
+               </ul>
+            </section>
+            <section>
+               <h2 id="">Favorite Books</h2>
+               <ul id="books">
+                  <li>The Sum of all Fears</li>
+                  <li>The Client</li>
+                  <li>The Lord of the Ring</li>
+               </ul>
+            </section>
+            <section>
+               <h2 id="">Favorite Music</h2>
+               <h3>Classic Rock</h3>
+               <ul id="music">
+                  <li>Led Zeppelin</li>
+                  <li>Aerosmith</li>
+                  <li>Pink Floyd</li>
+               </ul>
+            </section>
+         </article>
+         <button>Click Me to Hide LI tags</button>
+      </div>
+      <section id="module4">
+         <p id="test">This is some <b>bold</b> text in a paragraph</p>
+         <button id="btn1">Show Text</button>
+         <button id="btn2">Show HTML</button>
+      </section>
+   </main>
+   <script>
+      function myFunction (){
+         $("#firstH2").attr("style","color:red").html("hello JQuerys")
+      }
+
+      $(document).ready(function(){
+         myFunction()
+
+         $("button").click(function(){
+            $("li").hide()
+         })
+         $('#btn1').click(function(){
+            alert("text: "+ $('#test').text())
+         });
+
+         $('#btn2').click(function(){
+            alert("HTML: "+ $('#test').html())
+         })
+      })
+   </script>
+</body>
+</html>
