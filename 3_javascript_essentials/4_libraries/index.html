@@ -74,6 +74,38 @@
          <button id="btn1">Show Text</button>
          <button id="btn2">Show HTML</button>
       </section>
+      <section>
+         <p>
+            <a href="http://www.google.com" id="w3s">Google.com</a>
+         </p>
+         <button id="btnShow">Show href Value</button>
+      </section>
+      <section id="attr">
+         <p id="text1">This is a paragraph</p>
+         <p id="text2">This is another paragraph</p>
+         <button id="btn3">Set Text</button>
+         <button id="btn4">Set HTML</button>
+         <button id="btn5">Set Value</button>
+         <p>input field: <input type="text" id="text3" value="Mickey Mouse">  </p>
+      </section>
+      <section>
+         <p>This is a paragraph</p>
+         <button id="appendText">Append text</button>
+      </section>
+      <section>
+         <div id ='div1' style="height:100px; width: 300px; border: 1px solid #000; background-color: yellow;">
+            This is some text in the div
+            <p>This is a paragraph in the div</p>
+            <p>This is another paragraph in the div</p>
+         </div>
+         <br>
+         <button id="removeText">Remove div element</button>
+      </section>
+      <section>
+         <button id="clickAnimate">Start Animation</button>
+         <p>By defualt, all HTML elements have a static position, and cannot be moved. Yo manipulate the position, </p>
+         <div id="animatedDiv" style="background:#98bf21; height: 100px; width: 100px; position: absolute;" ></div>
+      </section>
    </main>
    <script>
       function myFunction (){
@@ -92,6 +124,36 @@
 
          $('#btn2').click(function(){
             alert("HTML: "+ $('#test').html())
+         })
+
+         $("#btnShow").click(function(){
+            alert($("#w3s").attr("href"))
+         });
+         $("#btn3").click(function(){
+            $("#text1").text("Hello world!")
+         })
+         $("#btn4").click(function(){
+            $("#text2").html("<b>Hello world!</b>")
+         })
+         $("#btn5").click(function(){
+            $("#text3").val("Donald Duck")
+         })
+         $("#appendText").click(
+         function appendText(){
+            alert(1)
+            let txt1 = "<p>This is text along with html markup</p>" //create text with HTML
+            let txt2 = $("<p></p>").text("This is a text"); //create text with jquery
+            let txt3 = document.createElement("p")
+            txt3.innerHTML ="Text created using the DOM" // Create Text with the DOM
+            $("body").append(txt1, txt2, txt3) //append new elements
+         })
+         $("#removeText").click(function(){
+            $("#div1").remove()
+         })
+         $("#clickAnimate").click(function(){
+            $("#animatedDiv").animate({
+               left:"250px"
+            })
          })
       })
    </script>
